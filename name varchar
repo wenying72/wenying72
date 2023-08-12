@@ -1,0 +1,4 @@
+mysql> create table if not exists class(
+    -> class_name varchar(20),
+    -> class_room varchar(10));
+
