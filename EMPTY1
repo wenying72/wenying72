@@ -1,0 +1,12 @@
+enum State
+	{
+		EMPTY,
+		DELETE,
+		EXIST
+	};
+	template <class K, class V>
+	struct HashDate
+	{
+		pair<K, V> _kv;
+		State _state = EMPTY;
+	};
