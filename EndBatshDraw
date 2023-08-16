@@ -1,0 +1,32 @@
+int main()
+{
+   // test();
+
+    init();
+
+    while (1)
+    {
+        
+ 
+        keyEvent();
+        
+        BeginBatchDraw();//double buffer mechanical start
+
+
+        updataBg();
+
+        putimagePNG2(heroX, heroY, &imgHeros[heroIndex]);
+
+        FlushBatchDraw();
+       
+        //EndBatshDraw();//ouble buffer mechanical end
+
+        fly();
+
+        // add Frame waiting
+        Sleep(20);
+
+    }
+    return 0;
+}
+
